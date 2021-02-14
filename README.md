@@ -11,8 +11,8 @@ Wait until Connected
 Turn on the other Stick
 Turn on the App - pair in bluetooth, then connect in the App
 
-Watch the messages scroll by
-< is from amp to app
-> is from app to amp
+Watch the messages scroll by  
+'''<''' is from amp to app
+'''>''' is from app to amp
 
 Enjoy
