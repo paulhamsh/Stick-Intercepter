@@ -2,7 +2,7 @@
 
 M5 Stick code to intercept traffic between the app and the amp - needs two M5 Sticks and a serial connection in both grove ports.   
 
-The picture below has the yellow and white leads swapped so they make a tx-rx serial connection both ways   
+The picture below has the yellow and white leads swapped so they make a tx-rx serial connection both ways. You can see the soldered join under the sticky tape in the picture.   
 
 It runs at 1M baud for the serial, and whatever the bluetooth can run at on the Sticks.   
 
