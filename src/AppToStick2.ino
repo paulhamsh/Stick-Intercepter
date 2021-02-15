@@ -61,6 +61,10 @@ void loop() {
   
   while (HWSerial.available()) {
     ser_byte = HWSerial.read();
+
+//    M5.Lcd.print("{");
+//    M5.Lcd.print(ser_byte, HEX);
+    
     buf[pos++] = ser_byte;
     if (pos == 7) {
       len = ser_byte; 

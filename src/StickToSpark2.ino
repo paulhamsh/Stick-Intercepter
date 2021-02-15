@@ -16,7 +16,8 @@ bool connected;
 uint8_t buf[5000];
 int pos;
 int scr_line;
-int pre;
+uint8_t pre;
+//uint8_t seq=0;
 
 unsigned long count;
 
@@ -79,13 +80,23 @@ void flush_in() {
     bt_byte = SerialBT.read();
 }
 
-void send_preset(int pres) {
+void send_preset(uint8_t pres) {
   set_preset[24] = pres;
   SerialBT.write(set_preset, 26);
   flush_in(); 
+  
   upd_preset[24] = pres;
-  upd_preset[19] = 0x01;
-  if (pres == 1) upd_preset[19] = 0x02;
+  // this is actually the 8 bit xor checksum, 
+  // but for this short message it is just the same as the preset number.  
+//  upd_preset[19] = pres;  
+// this was the fix 
+//  upd_preset[19] = 0x01; 
+
+//  upd_preset[18] = seq++;
+  if (pres == 0) upd_preset[19] = 0x01; // this works
+  if (pres == 1) upd_preset[19] = 0x02; // this works
+  if (pres == 2) upd_preset[19] = 0x01; // this works
+  if (pres == 3) upd_preset[19] = 0x01; // 0x02 works, 0x01, 0x04 works - just not 0x03
   HWSerial.write(upd_preset, 26);
 }
 
@@ -111,6 +122,7 @@ void setup() {
   count = millis();
   pre = 0;
 }
+
 void loop() {
   M5.update();
   
