@@ -14,7 +14,9 @@ I only use two Sticks because I don't think you can have two bluetooth connectio
 
 ## Installation instructions   
 
-Using Arduino IDE, load the programs onto the two Sticks (one program each).   
+Install board manager and library for M5 Stick as per the M5 website.   
+
+Using Arduino IDE, load the programs onto the two Sticks (one program each).      
 
 ## Operating instructions
 
