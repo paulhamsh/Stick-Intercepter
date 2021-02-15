@@ -7,7 +7,7 @@ The picture below has the yellow and white leads swapped so they make a tx-rx se
 It runs at 1M baud for the serial, and whatever the bluetooth can run at on the Sticks.   
 
 ![Spark Setups](https://github.com/paulhamsh/Stick-Intercepter/blob/main/M5Sticks.jpg)
-![Spark Setups](https://github.com/paulhamsh/Stick-Intercepter/blob/main/M5Stick2.png)
+![Spark Setups](https://github.com/paulhamsh/Stick-Intercepter/blob/main/M5Stick2.PNG)
 
 One Stick runs App to Stick, the other runs Stick to Amp   
 The app talks to 'App to Stick' (which appears as 'Spark 40 Audio' over bluetooth) and 'Stick to Amp' talks to the amp.   
