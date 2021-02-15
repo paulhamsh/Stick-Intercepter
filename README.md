@@ -2,6 +2,8 @@
 
 M5 Stick code to intercept traffic between the app and the amp - needs two M5 Stick and a serial connection in both grove ports.
 
+![Spark Setups](https://github.com/paulhamsh/Stick-Intercepter/blob/main/M5Sticks.jpg)
+
 One Stick runs App to Stick, the other runs Stick to Amp
 
 Turn off both Sticks  
